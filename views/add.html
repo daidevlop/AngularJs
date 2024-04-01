@@ -1,0 +1,61 @@
+<!-- <h2>Thêm mới sản phẩm</h2>
+<form ng-init="formAdd={}">
+    <div class="mb-3">
+        <label for="name">Name</label>
+        <input class="form-control " type="text" class="name" ng-model="formAdd.name">
+        <p>{{err.name ? err.name : ""}}</p>
+    </div>
+    <div class="mb-3">
+        <label for="price">Price</label>
+        <input class="form-control " type="text" class="price" ng-model="formAdd.price">
+        <p>{{err.price ? err.price : ""}}</p>
+    </div>
+    <div class="mb-3">
+        <label for="">Gioi tinh</label>
+        <select name="" class="form-select " ng-model="formAdd.select">
+            <option value="">--Chon--</option>
+            <option value="1">Nam</option>
+            <option value="2">Nu</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <input class="btn btn-primary" type="submit" class="btn" ng-click="submitAdd()">
+    </div>
+    <h1>{{test}}</h1>
+</form> -->
+<div class="col-md-8">
+    <!-- general form elements -->
+    <div class="box box-primary">
+        <div class="box-header with-border">
+            <h3 class="box-title">Thêm mới menu</h3>
+        </div>
+        <!-- /.box-header -->
+        <!-- form start -->
+        <form role="form" ng-init="formAdd={}">
+            <div class="box-body">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Name</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" ng-model="formAdd.name"
+                        placeholder="Mời bạn nhập name">
+                        <p class="text-red ">{{err.name ? err.name : ""}}</p>
+                </div>
+
+                <div class="box-body">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Price</label>
+                        <input type="number" class="form-control" id="exampleInputEmail1" ng-model="formAdd.price"
+                            placeholder="Mời bạn nhập price">
+                            <p class="text-red">{{err.price ? err.price : ""}}</p>
+                    </div>
+                </div>
+                <!-- /.box-body -->
+
+                <div class="box-footer">
+                    <button type="submit" class="btn btn-primary" ng-click="submitAdd()">Thêm mới</button>
+                </div>
+        </form>
+    </div>
+
+    <!-- /.box -->
+
+</div>
